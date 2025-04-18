@@ -49,10 +49,7 @@ async def get_part(message: Message, state: FSMContext):
 @router.message(Complaint.entering_quantity)
 async def get_quantity(message: Message, state: FSMContext):
     await state.update_data(quantity=message.text)
-    await message.answer(
-        "📸 Завантажте, будь ласка, фото у довільному порядку.
-"
-        "Після кожного фото зʼявляються кнопки:
+   await message.answer("📸 Завантажте, будь ласка, фото у довільному порядку.\nПісля кожного фото зʼявляються кнопки:")
 📸 Додати ще фото
 ✅ Надіслати на оформлення"
     )
