@@ -1,6 +1,6 @@
 from aiogram import Router
 from aiogram.types import Message
-from aiogram.filters import Text
+from aiogram.filters.text import Text
 
 router = Router()
 
